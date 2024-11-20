@@ -291,6 +291,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;
+        case RSFT_T(KC_RPRN):
+            if (record->tap.count > 0) {
+                if (record->event.pressed) {
+                    register_code16(KC_RPRN);
+                } else {
+                    unregister_code16(KC_RPRN);
+                }
+                return false;
+            }
+            return true;
     }
     return true;
 }
