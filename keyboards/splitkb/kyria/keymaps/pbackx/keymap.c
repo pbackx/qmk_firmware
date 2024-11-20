@@ -132,7 +132,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
     [_SYM] = LAYOUT(
      KC_TILD , KC_EXLM ,  KC_AT , KC_HASH, KC_DLR , KC_PERC,                                     KC_CIRC, KC_AMPR, KC_ASTR,KC_MINUS, KC_SLSH, _______,
-      KC_GRV , KC_LGUI , KC_LALT,CTL_LBRC,SFT_LPRN, KC_LCBR,                                     KC_RCBR,SFT_RPRN,CTL_RBRC, KC_PLUS, KC_ASTR, _______,
+      KC_GRV , KC_LGUI , KC_LALT,CTL_LBRC,SFT_LPRN, KC_LCBR,                                     KC_RCBR,SFT_RPRN,CTL_RBRC,ALT_PLUS, KC_ASTR, _______,
      KC_PIPE , KC_BSLS , _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_COMM,  KC_DOT,KC_EQUAL, _______,
                                   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
