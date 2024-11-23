@@ -18,9 +18,9 @@
 
 enum layers {
     _QWERTY = 0,
-    _NAV,
-    _SYM,
-    _NUMFUN,
+    _NAV = 3,
+    _SYM = 4,
+    _NUMFUN = 5,
 };
 
 
@@ -297,6 +297,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     register_code16(KC_RPRN);
                 } else {
                     unregister_code16(KC_RPRN);
+                }
+                return false;
+            }
+            return true;
+        case RALT_T(KC_PLUS):
+            if (record->tap.count > 0) {
+                if (record->event.pressed) {
+                    register_code16(KC_PLUS);
+                } else {
+                    unregister_code16(KC_PLUS);
                 }
                 return false;
             }
